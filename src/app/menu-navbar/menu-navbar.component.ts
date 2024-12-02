@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-navbar',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './menu-navbar.component.scss'
 })
 export class MenuNavbarComponent {
-
+  rutaLandingPage = input("#");
+  rutaSeccionLista = input("#");
 }

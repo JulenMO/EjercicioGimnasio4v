@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Lugar</th>
+            <th>Monitor</th>
+            <th>Tipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (act of actividades; track act) {
+        <tr>
+            <th>{{ act.fecha }}</th>
+            <td>{{ act.lugar }}</td>
+            <td>{{ act.monitor }}</td>
+            <td>{{ act.tipo }}</td>
+        </tr>
+        }
+        @empty {
+        <tr>
+            <th colspan="4">No hay actividades</th>
+        </tr>
+        }
+    </tbody>
+</table>
